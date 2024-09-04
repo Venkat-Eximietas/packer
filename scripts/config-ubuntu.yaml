@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: venkateswara
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+chpasswd:
+  list: |
+    venkateswara:packer
+  expire: False
+ssh_pwauth: True
