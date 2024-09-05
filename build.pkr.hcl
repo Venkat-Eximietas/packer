@@ -15,7 +15,7 @@ build {
       "sudo systemctl enable netscript",
       "sudo systemctl enable NetworkManager",
       "echo '[Unit]\nDescription=DHCP Client\nAfter=network.target\n\n[Service]\nExecStart=/sbin/dhclient\nRestart=always\n\n[Install]\nWantedBy=multi-user.target' | sudo tee /etc/systemd/system/dhclient.service",
-      "sudo chmod +x /etc/systemd/system/dhclient.service"
+      "sudo chmod +x /etc/systemd/system/dhclient.service",
       "sudo systemctl daemon-reload",
       "sudo systemctl enable dhclient.service",
       "sudo systemctl start dhclient.service"
