@@ -1,17 +1,10 @@
 #cloud-config
 users:
-<<<<<<< HEAD
   - name: gmits-admin
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
 chpasswd:
   list: |
     gmits-admin:packer
-=======
-  - name: venkat
-    sudo: ['ALL=(ALL) NOPASSWD:ALL']
-chpasswd:
-  list: |
-    venkat:nx2Tech291!
->>>>>>> 2922ad93922d90412fca77964085fbbd5a21f319
+
   expire: False
 ssh_pwauth: True
