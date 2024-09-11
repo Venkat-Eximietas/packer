@@ -8,17 +8,30 @@ packer {
 }
 
 source "nutanix" "ubuntu" {
+<<<<<<< HEAD
   nutanix_username = "var.nutanix_username"
   nutanix_password = "var.nutanix_password"
   nutanix_endpoint = "var.nutanix_endpoint"
   nutanix_port     = 9440
   nutanix_insecure = true
   cluster_name     = "var.cluster_name"
+=======
+  nutanix_username = "admin"
+  nutanix_password = "nx2Tech291!"
+  nutanix_endpoint = "10.42.36.39"
+  nutanix_port     = 9440
+  nutanix_insecure = true
+  cluster_name     = "PHX-POC036"
+>>>>>>> 2922ad93922d90412fca77964085fbbd5a21f319
   os_type          = "Linux"
 
   vm_disks {
     image_type        = "DISK_IMAGE"
+<<<<<<< HEAD
     source_image_name = "var.source_image_name"
+=======
+    source_image_name = "ubuntu-24.04-serve.img"
+>>>>>>> 2922ad93922d90412fca77964085fbbd5a21f319
   }
 
 
@@ -46,6 +59,11 @@ source "nutanix" "ubuntu" {
   user_data         = base64encode(file("scripts/config-ubuntu.yaml"))
   shutdown_command  = "echo 'packer' | sudo -S shutdown -P now"
   shutdown_timeout = "2m"
+<<<<<<< HEAD
   ssh_password     = "var.ssh_password"
   ssh_username     = "var.ssh_username"
+=======
+  ssh_password     = "nx2Tech291!"
+  ssh_username     = "venkat"
+>>>>>>> 2922ad93922d90412fca77964085fbbd5a21f319
 }
