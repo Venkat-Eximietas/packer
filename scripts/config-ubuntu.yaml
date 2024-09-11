@@ -1,9 +1,9 @@
 #cloud-config
 users:
-  - name: venkateswara
+  - name: gmits-admin
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
 chpasswd:
   list: |
-    venkateswara:packer
+    gmits-admin:packer
   expire: False
 ssh_pwauth: True

@@ -1,0 +1,8 @@
+nutanix_username  = "admin"
+nutanix_password  = "nx2Tech291!"
+nutanix_endpoint  = "10.42.36.39"
+cluster_name      = "PHX-POC036"
+source_image_name = "ubuntu-24.04-serve.img"
+subnet_name       = "primary"
+ssh_password      = "nx2Tech291!"
+ssh_username      = "gmits-admin"
